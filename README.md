@@ -12,13 +12,13 @@ npm run test-storybook
 
 ### In storybook
 
-- `Success` pass
-- `Fails In Storybook...` fail
-- `Passes In Storybook...` pass
+- `Success` pass ✅
+- `Fails In Storybook...` fail ❌
+- `Passes In Storybook...` pass ✅
 
 ### In test runner
 
-Test runner fails with this exception:
+Test runner fails with this exception 💣 :
 
 ```
 RUNS   browser: chromium  stories/Suspender.stories.jsx
