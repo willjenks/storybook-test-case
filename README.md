@@ -10,14 +10,17 @@ npm run test-storybook
 
 ## Behaviour
 
-In storybook:
+### In storybook
 
 - `Success` pass
 - `Fails In Storybook...` fail
 - `Passes In Storybook...` pass
 
-In test runner:
+### In test runner
 
+Test runner fails with this exception:
+
+```
 RUNS   browser: chromium  stories/Suspender.stories.jsx
 node:internal/process/promises:279
             triggerUncaughtException(err, true /* fromPromise */);
@@ -31,6 +34,6 @@ page.evaluate: Browser has been closed
     at runTest (/Users/will/experiments/node_modules/jest-runner/build/runTest.js:499:34)
 
     at Page.<anonymous> (/Users/will/experiments/stories/Suspender.stories.jsx:122:18)
-    
+```
 
 Commenting out `Passes In Storybook But Greaks Test Runner` story allows test runner to run as expected.
