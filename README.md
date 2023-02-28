@@ -2,9 +2,11 @@
 
 ## Set up
 
-1. npm i
-2. npm run storybook
-3. npm run test-storybook
+```
+npm i
+npm run storybook
+npm run test-storybook
+```
 
 ## Behaviour
 
